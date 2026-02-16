@@ -1,0 +1,40 @@
+/* App-specific styles */
+
+/* Ensure smooth scrolling behavior */
+html {
+  scroll-behavior: auto;
+}
+
+/* Remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full-width sections */
+section {
+  width: 100%;
+}
+
+/* Fix for pinned sections */
+.pin-spacer {
+  background-color: transparent !important;
+}
+
+/* Ensure proper z-index stacking */
+main > section {
+  position: relative;
+}
+
+/* Loading state */
+.loading {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
