@@ -289,8 +289,8 @@ export default function Hero() {
         className="absolute left-1/2 top-[22vh] -translate-x-1/2 z-30 pointer-events-none w-full text-center overflow-hidden"
       >
       
-        <h1 className="font-coolvetica font-normal text-terminal-accent flex justify-center perspective-1000"
-            style={{ fontSize: 'clamp(50px, 14vw, 180px)', lineHeight: 0.85 }}>
+        <h1 className="font-display font-bold text-terminal-accent flex justify-center perspective-1000"
+            style={{ fontSize: 'clamp(50px, 14vw, 1000px)', lineHeight: 0.85 }}>
           {headline.split('').map((char, i) => (
             <span key={i} className="brand-char inline-block whitespace-pre relative translate-z-0">
               {char}

@@ -164,7 +164,7 @@ export default function Process() {
             />
           </div>
 
-          <h2 className="process-title relative z-10 font-coolvetica font-normal text-terminal-text flex items-center justify-center mix-blend-difference"
+          <h2 className="process-title relative z-10 font-display font-bold text-terminal-text flex items-center justify-center mix-blend-difference"
               style={{ fontSize: 'clamp(60px, 20vw, 300px)', lineHeight: 0.8 }}>
             {title.split('').map((char, i) => (
               <span key={i} className="char inline-block whitespace-pre select-none hover:text-terminal-accent transition-colors duration-300">

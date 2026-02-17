@@ -216,12 +216,14 @@ export default function Contact() {
               >
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="form-field-wrapper opacity-0">
-                    <label className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
+                    <label htmlFor="contact-name" className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
                       Name
                     </label>
                     <input
+                      id="contact-name"
                       type="text"
                       name="name"
+                      autoComplete="name"
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -230,12 +232,14 @@ export default function Contact() {
                     />
                   </div>
                   <div className="form-field-wrapper opacity-0">
-                    <label className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
+                    <label htmlFor="contact-email" className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
                       Email
                     </label>
                     <input
+                      id="contact-email"
                       type="email"
                       name="email"
+                      autoComplete="email"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -247,12 +251,14 @@ export default function Contact() {
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="form-field-wrapper opacity-0">
-                    <label className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
+                    <label htmlFor="contact-company" className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
                       Company
                     </label>
                     <input
+                      id="contact-company"
                       type="text"
                       name="company"
+                      autoComplete="organization"
                       value={formData.company}
                       onChange={handleChange}
                       className="w-full terminal-input border-white/5 focus:border-terminal-accent transition-colors duration-500"
@@ -260,12 +266,14 @@ export default function Contact() {
                     />
                   </div>
                   <div className="form-field-wrapper opacity-0">
-                    <label className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
+                    <label htmlFor="contact-budget" className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
                       Budget
                     </label>
                     <div className="relative">
                       <select
+                        id="contact-budget"
                         name="budget"
+                        autoComplete="off"
                         value={formData.budget}
                         onChange={handleChange}
                         className="w-full terminal-input border-white/5 focus:border-terminal-accent appearance-none cursor-pointer"
@@ -284,11 +292,13 @@ export default function Contact() {
                 </div>
 
                 <div className="form-field-wrapper opacity-0">
-                  <label className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
+                  <label htmlFor="contact-message" className="block font-mono text-[10px] uppercase tracking-widest text-terminal-muted/50 mb-3">
                     Message
                   </label>
                   <textarea
+                    id="contact-message"
                     name="message"
+                    autoComplete="off"
                     value={formData.message}
                     onChange={handleChange}
                     required
