@@ -286,8 +286,9 @@ export default function Hero() {
       {/* Brand Headline - Character Staggered */}
       <div
         ref={brandRef}
-        className="absolute left-1/2 top-[22vh] -translate-x-1/2 z-0 pointer-events-none w-full text-center overflow-hidden"
+        className="absolute left-1/2 top-[22vh] -translate-x-1/2 z-30 pointer-events-none w-full text-center overflow-hidden"
       >
+      
         <h1 className="font-coolvetica font-normal text-terminal-accent flex justify-center perspective-1000"
             style={{ fontSize: 'clamp(50px, 14vw, 180px)', lineHeight: 0.85 }}>
           {headline.split('').map((char, i) => (
